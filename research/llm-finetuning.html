@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-modal Sensor Fusion and Semi-automated Labelling Systems | Haase Schuetz</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="profile">
+                <div class="profile-image">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="profile-info">
+                    <h1 class="name">Haase Schuetz</h1>
+                    <p class="title">Research Professional</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="../index.html#cv"><i class="fas fa-file-alt"></i> CV</a></li>
+                    <li><a href="../index.html#research" class="active"><i class="fas fa-microscope"></i> Research</a></li>
+                    <li><a href="../index.html#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                    <li><a href="../publications.html"><i class="fas fa-book"></i> Publications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-flask"></i> LLM finetuning and interpretation</h2>
+                    <p class="section-description">My research focuses on efficient fine-tuning of LLMs using parameter-efficient methods like LoRA/QLoRA (implemented for Mistral-7B), rigorous evaluation via modular benchmarking suites (MMLU, TruthfulQA, ARC), and training data analysis to understand how dataset composition, quality, and bias impact model behavior. </p>
+                </div>
+
+                <div class="research-content">
+                    <div class="research-overview">
+                        <p></p>
+                    </div>
+
+                    <div class="research-section">
+                        <h3><i class="fas fa-project-diagram"></i> Research Topic: Explainable, Efficient, and Deployable Large Language Models</h3>
+                        <p>
+                        My research focuses on the development of <strong>explainable, adaptable, and resource-efficient Large Language Model (LLM) systems</strong>,
+                        addressing fundamental challenges across the complete LLM lifecycle—from understanding model behavior and training data influence to efficient
+                        fine-tuning, rigorous evaluation, and optimized deployment. Rather than treating these domains as isolated engineering tasks, the research investigates
+                        how transparency, adaptation, evaluation, and operational efficiency can be integrated into a unified methodology for trustworthy and production-ready AI systems.
+                        </p>
+                        
+                        <p>
+                        A central research question concerns the relationship between <strong>training data and emergent model behavior</strong>. Large language models are often
+                        treated as black boxes, making it difficult to determine why specific outputs occur or which training samples contribute to particular behaviors.
+                        To address this challenge, my work explores training-data attribution techniques that estimate the influence of individual training examples on
+                        downstream model decisions. By combining attribution-vector computation, influence scoring, targeted data selection, and behavioral validation through
+                        subsequent fine-tuning experiments, this research contributes to a deeper understanding of model interpretability, explainability, and traceability.
+                        The objective is to establish mechanisms that allow practitioners to identify influential data sources, diagnose undesirable behaviors, and improve
+                        confidence in model outputs.
+                        </p>
+                        
+                        <p>
+                        Building on this understanding of model behavior, a second research direction investigates
+                        <strong>parameter-efficient adaptation of foundation models</strong>. As modern LLMs continue to grow in size, the computational cost of full-model
+                        retraining becomes increasingly prohibitive. My work therefore focuses on techniques such as LoRA and QLoRA, which enable domain adaptation through
+                        lightweight, trainable parameter subsets while preserving the underlying pretrained model. This research examines the trade-offs between model
+                        specialization, training efficiency, computational resource consumption, and downstream task performance. The goal is to enable rapid adaptation of
+                        foundation models to domain-specific requirements while minimizing hardware demands and operational costs.
+                        </p>
+                        
+                        <p>
+                        A third pillar of the research addresses the challenge of <strong>systematic and reproducible model evaluation</strong>. The rapid evolution of LLM
+                        architectures has created a fragmented ecosystem of benchmarks, metrics, and evaluation methodologies, often making direct comparison difficult.
+                        To support scientific rigor and reproducibility, I developed modular evaluation frameworks capable of assessing models across multiple dimensions,
+                        including knowledge acquisition, reasoning capability, safety, truthfulness, and generation quality. The research emphasizes standardized benchmark
+                        integration, extensible evaluation pipelines, consistent metric computation, and support for diverse model backends. This enables objective comparison
+                        of model variants, fine-tuning strategies, and deployment configurations while providing a foundation for evidence-based model selection.
+                        </p>
+                        
+                        <p>
+                        The final research domain focuses on <strong>efficient deployment and model optimization</strong>. While advances in model capability continue to drive
+                        adoption, practical deployment remains constrained by memory requirements, inference latency, throughput, and infrastructure cost. My research therefore
+                        investigates quantization and model compression techniques, including INT8, INT4, GPTQ, and AWQ approaches, with the goal of systematically analyzing
+                        the relationship between computational efficiency and predictive performance. Through standardized benchmarking frameworks, this work evaluates how
+                        different quantization strategies affect accuracy, latency, memory footprint, and throughput, thereby supporting informed deployment decisions for cloud,
+                        enterprise, and edge environments.
+                        </p>
+                        
+                        <p>
+                        Taken together, these research activities contribute to a holistic vision of <strong>trustworthy and scalable AI systems</strong>. Training-data attribution
+                        provides transparency into model behavior; efficient fine-tuning enables targeted adaptation; rigorous evaluation ensures measurable quality and robustness;
+                        and deployment optimization makes advanced AI systems economically viable in real-world environments. The overarching objective is to bridge the gap between
+                        cutting-edge foundation-model research and practical enterprise adoption by developing methods that make LLMs more understandable, adaptable, measurable,
+                        and deployable at scale.
+                        </p>
+                    </div>
+
+                    <div class="research-section">
+                        <h3><i class="fas fa-book"></i> Related Links</h3>
+                        <div class="related-publications">
+                            <div class="publication-item">
+                                <div class="publication-header">
+                                    <h4>Training Data Attribution</h4>
+                                </div>
+                                Research on influence estimation, attribution methods, training data selection, and behavioral analysis of LLM training corpora.
+                                <a href="https://github.com/HaaseSchuetz/training-data-attribution" target="_blank">
+                                    <i class="fas fa-file-pdf"></i> View Repo
+                                </a>
+                            </div>
+                            <div class="publication-item">
+                                <div class="publication-header">
+                                    <h4>LLM Fine-Tuning with LoRA</h4>
+                                </div>
+                              Research on parameter-efficient fine-tuning, domain adaptation, and compute-efficient specialization of foundation models.
+                                <a href="https://github.com/HaaseSchuetz/llm-finetuning-lora" target="_blank">
+                                    <i class="fas fa-file-pdf"></i> View Repo
+                                </a>
+                            </div>
+                            <div class="publication-item">
+                                  <div class="publication-header">
+                                      <h4>LLM Evaluation Suite</h4>
+                                  </div>
+                                  Modular benchmarking and evaluation framework for systematic and reproducible assessment of large language models.
+                                  <a href="https://github.com/HaaseSchuetz/llm-evaluation-suite" target="_blank">
+                                      <i class="fas fa-file-pdf"></i> View Repo
+                                  </a>
+                              </div>
+                              <div class="publication-item">
+                                  <div class="publication-header">
+                                      <h4>LLM Quantization Benchmark</h4>
+                                  </div>
+                                Benchmarking framework for analyzing trade-offs between model quality, memory consumption, latency, throughput, and deployment efficiency.
+                                  <a href="https://github.com/HaaseSchuetz/llm-quantization-benchmark" target="_blank">
+                                      <i class="fas fa-file-pdf"></i> View Repo
+                                  </a>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="back-link">
+                    <a href="index.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Back to Research Areas
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#cv">CV</a></li>
+                        <li><a href="../index.html#research">Research</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../publications.html">Publications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/HaaseSchuetz" class="social-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/christian-haase-schuetz/" class="social-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Haase Schuetz. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> using GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
