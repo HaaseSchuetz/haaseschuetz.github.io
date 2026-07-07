@@ -36,7 +36,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2><i class="fas fa-flask"></i> Multi-modal Sensor Fusion and Semi-automated Labelling Systems</h2>
-                    <p class="section-description">PhD research on deep learning for multi-modal sensor data in automated driving</p>
+                    <p class="section-description">PhD research on Data-Centric Learning and Dataset Quality for Autonomous Driving Perception</p>
                 </div>
 
                 <div class="research-content">
@@ -46,7 +46,84 @@
 
                     <div class="research-section">
                         <h3><i class="fas fa-project-diagram"></i> Research Focus</h3>
-                        <div class="focus-areas">
+                        <p>
+                            My research focuses on a central challenge in modern machine learning and autonomous driving:
+                            <strong>how to develop reliable perception systems when training data is imperfect, incomplete,
+                            or costly to obtain</strong>. Across my work, I have investigated the interaction between
+                            <strong>dataset quality, labeling processes, and deep-learning-based perception</strong>,
+                            with the goal of improving model robustness while reducing dependence on expensive manual annotation.
+                            This research sits at the intersection of computer vision, machine learning, data-centric AI,
+                            and autonomous driving perception.
+                            </p>
+                            
+                            <p>
+                            A key motivation is that state-of-the-art perception systems rely heavily on large-scale labeled datasets,
+                            yet the generation and maintenance of high-quality annotations remains one of the most significant
+                            bottlenecks in industrial AI development. While advances in neural network architectures continue
+                            to improve performance, practical deployment often depends equally on the quality, consistency,
+                            and scalability of the underlying data. This observation motivated a series of contributions
+                            addressing dataset quality from complementary perspectives.
+                            </p>
+                            
+                            <p>
+                            The foundation of this research is the broader field of
+                            <strong>multi-modal perception for autonomous driving</strong>, where information from cameras,
+                            LiDAR, radar, and other sensors must be fused to enable robust scene understanding.
+                            In the paper
+                            <em>Deep Multi-modal Object Detection and Semantic Segmentation for Autonomous Driving:
+                            Datasets, Methods, and Challenges</em>,
+                            we analyzed the emerging landscape of multi-sensor perception systems, reviewed major benchmarks
+                            and datasets, and examined the advantages and limitations of different fusion strategies.
+                            The work highlighted that the success of autonomous driving perception is not only determined
+                            by model architecture but also by sensor quality, annotation quality, and dataset coverage,
+                            thereby motivating a stronger focus on data-centric approaches to perception development.
+                            </p>
+                            
+                            <p>
+                            Building on this perspective, the paper
+                            <em>Estimating Labeling Quality with Deep Object Detectors</em>
+                            introduced methods for using trained object detectors themselves as tools for dataset auditing
+                            and quality assessment. Instead of treating annotations as unquestionable ground truth,
+                            we demonstrated that detector predictions can be leveraged to estimate annotation quality,
+                            identify missing labels, and detect inconsistencies in large-scale datasets.
+                            This work established a feedback loop between model development and data validation,
+                            enabling more efficient quality assurance processes for industrial perception datasets.
+                            The approach reduces the need for exhaustive manual inspection and supports scalable dataset
+                            management in safety-critical applications such as autonomous driving.
+                            </p>
+                            
+                            <p>
+                            The next step was to move beyond quality estimation towards
+                            <strong>active dataset improvement</strong>. In the paper
+                            <em>Iterative Label Improvement: Robust Training by Confidence Based Filtering and Dataset Partitioning</em>,
+                            we proposed a data-centric learning framework that automatically improves training labels
+                            through iterative self-training and confidence-based relabeling. The method combines pseudo-label
+                            generation, confidence estimation, and dataset partitioning to progressively increase label quality
+                            while simultaneously improving model performance. Unlike many competing approaches,
+                            the framework does not require additional teacher models or perfectly curated reference datasets,
+                            making it highly applicable in real-world industrial settings. Furthermore, the approach naturally
+                            extends to semi-supervised learning scenarios by exploiting large amounts of unlabeled data.
+                            </p>
+                            
+                            <p>
+                            Taken together, these contributions form a coherent research agenda centered on
+                            <strong>data quality as a fundamental driver of machine learning performance</strong>.
+                            Rather than viewing datasets as static inputs to model development, the research treats datasets
+                            as evolving assets that can be analyzed, validated, and continuously improved using machine learning itself.
+                            This perspective anticipates the principles of what is now widely known as
+                            <strong>Data-Centric AI</strong>, where improvements in data quality often yield greater practical
+                            benefits than increases in model complexity.
+                            </p>
+                            
+                            <p>
+                            The broader impact of this work lies in enabling more scalable and reliable AI systems for
+                            autonomous driving and other safety-critical domains. By combining expertise in perception systems,
+                            dataset engineering, label quality estimation, and robust learning under noisy supervision,
+                            the research contributes toward reducing annotation costs, improving model reliability,
+                            and accelerating the deployment of machine learning systems in real-world environments.
+                            </p>
+                            
+                        <!--div class="focus-areas">
                             <div class="focus-area">
                                 <div class="focus-icon">
                                     <i class="fas fa-satellite-dish"></i>
@@ -68,17 +145,7 @@
                                 <h4>Production-relevant Systems</h4>
                                 <p>Bridging academic research with practical, scalable systems that can be deployed in real-world automotive applications.</p>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="research-section">
-                        <h3><i class="fas fa-lightbulb"></i> Key Contributions</h3>
-                        <ul class="contributions-list">
-                            <li><strong>Deep Multi-modal Object Detection:</strong> Developed methodologies for combining LiDAR and camera data to improve object detection performance in autonomous driving scenarios.</li>
-                            <li><strong>Semi-automated Annotation Pipelines:</strong> Created systems that leverage weak supervision and active learning to reduce manual labelling costs by up to 70% while maintaining annotation quality.</li>
-                            <li><strong>Sensor Fusion Architectures:</strong> Designed novel neural network architectures that effectively fuse heterogeneous sensor data at different levels of abstraction.</li>
-                            <li><strong>Scalable Data Processing:</strong> Built pipelines capable of processing petabytes of sensor data efficiently for training and evaluation.</li>
-                        </ul>
+                        </div-->
                     </div>
 
                     <div class="research-section">
@@ -97,51 +164,6 @@
                         </div>
                     </div>
 
-                    <div class="research-section">
-                        <h3><i class="fas fa-flask"></i> Methodology</h3>
-                        <div class="methodology-content">
-                            <p>My approach combines theoretical rigor with practical engineering:</p>
-                            <ul class="methodology-list">
-                                <li><strong>Theoretical Foundation:</strong> Grounded in principles of machine learning, signal processing, and information theory.</li>
-                                <li><strong>Empirical Validation:</strong> Extensive experimentation on real-world datasets with rigorous evaluation metrics.</li>
-                                <li><strong>System Integration:</strong> Consideration of deployment constraints, computational efficiency, and real-time performance.</li>
-                                <li><strong>Iterative Development:</strong> Continuous refinement based on feedback from domain experts and real-world testing.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="research-section">
-                        <h3><i class="fas fa-chart-line"></i> Impact</h3>
-                        <div class="impact-statistics">
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i class="fas fa-database"></i>
-                                </div>
-                                <div class="stat-content">
-                                    <span class="stat-number">10TB+</span>
-                                    <span class="stat-label">Sensor Data Processed</span>
-                                </div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i class="fas fa-percentage"></i>
-                                </div>
-                                <div class="stat-content">
-                                    <span class="stat-number">70%</span>
-                                    <span class="stat-label">Labelling Cost Reduction</span>
-                                </div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i class="fas fa-paper-plane"></i>
-                                </div>
-                                <div class="stat-content">
-                                    <span class="stat-number">2+</span>
-                                    <span class="stat-label">Peer-reviewed Publications</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="back-link">
