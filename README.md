@@ -58,3 +58,9 @@ https://haaseschuetz.github.io
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- [Font Awesome](https://fontawesome.com/) for the icon set
+- [GitHub Pages](https://pages.github.com/) for free hosting
+- All the open-source tools and libraries that make this possible
